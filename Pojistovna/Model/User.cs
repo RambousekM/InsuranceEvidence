@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Pojistovna.Model
 {
-    public class User : object
+    public class User
     {
         public User(string firstName, string lastName, int age, string phoneNumber)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
-            this.Age = age;
-            this.PhoneNumber = phoneNumber;
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            PhoneNumber = phoneNumber;
         }
 
         public string FirstName { get; private set; }

@@ -9,10 +9,8 @@ using System.Threading.Tasks;
 
 namespace Diar
 {
-
     class Program
     {
-       
         static void Main(string[] args)
         {
             Welcome();
@@ -23,7 +21,6 @@ namespace Diar
             CreateInitialData(repo);
 
             char volba = '0';
-            // hlavní cyklus
             while (volba != '5')
             {
                 Console.WriteLine();
@@ -35,7 +32,6 @@ namespace Diar
                 Console.WriteLine("5 - Exit");
                 volba = Console.ReadKey().KeyChar;
                 Console.WriteLine();
-                // reakce na volbu
                 switch (volba)
                 {
                     case '1':
